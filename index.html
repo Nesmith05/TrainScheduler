@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css" />
+    <script src="assets/Javascript/train.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="jumbotron">
+                    <h1>Anytime is Train Time</h1>
+                    <h6>Choo Choo Chee Chee</h6>
+                </div>
+            </div>
+        </div>
+        <!-- Train Schedule -->
+        <div class="row">
+          <div class="col-md-11">
+            <div class="card">
+              <table class="table">
+                      <thead>
+                          <div class="card-header">
+                           Train Schedule
+                          </div>
+                        <tr>
+                          <th scope="col">Train Name</th>
+                          <th scope="col">Destination</th>
+                          <th scope="col">Frequency</th>
+                          <th scope="col">Next Arrival</th>
+                          <th scope="col">Miles Away</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>Okoye</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                          <td>Nakia</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry the Bird</td>
+                          <td>@twitter</td>
+                          <td>Crissle</td>
+                          <td>dsadada</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Kid Fury</td>
+                            <td>LookAtDustin</td>
+                            <td>Crissle</td>
+                            <td>ddfdfsfds</td>
+                          </tr>
+                      </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+        <br>
+<!-- Train Form -->
+      <div class="row">
+          <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                  Add Train
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <form>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput">Train Name</label>
+                        <input type="text" class="form-control" id="train-name" placeholder="Train Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Where you goin???">
+                        <form>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput">First Train Time  (HH:mm - military time) </label>
+                        <input type="text" class="form-control" id="time" placeholder="TIK TOK">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Frequency</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="HOW OFTEN??">
+                      </div>
+                  <!-- </form> -->
+                        <button class="btn btn-primary" type="submit" value="Submit" id="submit">Submit</button>
+                      <!-- </div> -->
+                  </form>
+                </div>
+            </div>
+          </div>
+
+      </div>
+
+
+
+
+
+     
+    </div>
+    <br>
+    <footer>   yerrrrrr </footer>
+</body>
+</html>
