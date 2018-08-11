@@ -1,6 +1,6 @@
 $(document).ready(function (){
     var config = {
-        apiKey: "AIzaSyDl3XCHlx2IOKkZIXEGZ3k9mJ6R5QB7HYk",
+        apiKey: 
         authDomain: "train-schedule-3e122.firebaseapp.com",
         databaseURL: "https://train-schedule-3e122.firebaseio.com",
         projectId: "train-schedule-3e122",
