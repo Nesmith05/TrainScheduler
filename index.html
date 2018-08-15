@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Train Schedule</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Moment.js -->
+
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -17,10 +20,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-11">
                 <div class="jumbotron">
-                    <h1>Anytime is Train Time</h1>
-                    <h6>Choo Choo Chee Chee</h6>
+                    <h1>Night on the Galactic Railroad</h1>
+                    <h6> &#9734&#9734 Journey to the Stars &#9734&#9734 </h6>
                 </div>
             </div>
         </div>
@@ -31,46 +34,17 @@
               <table class="table">
                       <thead>
                           <div class="card-header">
-                           Train Schedule
+                            &#9734 Train Schedule &#9734
                           </div>
                         <tr>
-                          <th scope="col">Train Name</th>
-                          <th scope="col">Destination</th>
-                          <th scope="col">Frequency</th>
-                          <th scope="col">Next Arrival</th>
-                          <th scope="col">Miles Away</th>
+                          <th>Train Name</th>
+                          <th>Destination</th>
+                          <th>Frequency</th>
+                          <th>Next Arrival</th>
+                          <th>Minutes Away</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                          <td>Okoye</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                          <td>Nakia</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry the Bird</td>
-                          <td>@twitter</td>
-                          <td>Crissle</td>
-                          <td>dsadada</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Kid Fury</td>
-                            <td>LookAtDustin</td>
-                            <td>Crissle</td>
-                            <td>ddfdfsfds</td>
-                          </tr>
+                      <tbody id="table-body">
                       </tbody>
               </table>
 
@@ -80,10 +54,10 @@
         <br>
 <!-- Train Form -->
       <div class="row">
-          <div class="col-md-10">
+          <div class="col-md-11">
             <div class="card">
                 <div class="card-header">
-                  Add Train
+                  &#9734 Add Train &#9734
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
@@ -95,15 +69,15 @@
                       </div>
                       <div class="form-group">
                         <label for="formGroupExampleInput2">Destination</label>
-                        <input type="text" class="form-control" id="destination" placeholder="Where you goin???">
+                        <input type="text" class="form-control" id="destination" placeholder="Where To?">
                         <form>
                       <div class="form-group">
                         <label for="formGroupExampleInput">First Train Time  (HH:mm - military time) </label>
-                        <input type="text" class="form-control" id="time" placeholder="TIK TOK">
+                        <input type="text" class="form-control" id="time" placeholder="Tick Tock!">
                       </div>
                       <div class="form-group">
                         <label for="formGroupExampleInput2">Frequency</label>
-                        <input type="text" class="form-control" id="frequency" placeholder="HOW OFTEN??">
+                        <input type="text" class="form-control" id="frequency" placeholder="How often?">
                       </div>
                   <!-- </form> -->
                         <button class="btn btn-primary" type="submit" value="Submit" id="submit">Submit</button>
@@ -122,6 +96,6 @@
      
     </div>
     <br>
-    <footer>   yerrrrrr </footer>
+    <footer>   </footer>
 </body>
 </html>
